@@ -8,7 +8,6 @@ import { HomeComponent } from './home.component';
 describe('HomeComponent', () => {
   let component: HomeComponent;
   let fixture: ComponentFixture<HomeComponent>;
-  let fb: FormBuilder;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({

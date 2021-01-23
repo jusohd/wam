@@ -26,28 +26,4 @@ describe('UserComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
-  /*
-  it('Init: should create an array with form inputs', fakeAsync(() => {
-    component.ngOnInit();
-    fixture.detectChanges();
-    tick(500)
-
-    expect(component.inputs.length).toBeGreaterThan(0);
-  }));
-
-  it('should emit an event when click next button', fakeAsync(() => {
-    spyOn(component, 'submitForm');
-
-    component.userForm = fb.group({
-      name: new FormControl(''),
-      lastname: new FormControl(''),
-    });
-    const button = fixture.debugElement.query(By.css('#btnNext')).nativeElement;
-    button.click();
-
-    fixture.whenStable().then(() => {
-      expect(component.submitForm).toHaveBeenCalled();
-    })
-  }));
-  */
 });
