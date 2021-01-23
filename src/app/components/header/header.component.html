@@ -1,0 +1,30 @@
+<mat-toolbar>
+    <div class="d-block d-md-none">
+        <button mat-button class=" mx-1 px-0 px-md-2" (click)="toggleSide()">
+            <mat-icon>menu</mat-icon>
+        </button>
+    </div>
+
+    <div class="col-10 col-md-4 px-0">
+        <img src="../../../assets/imgs/logoWam.png" class="logoWamFooter">
+    </div>
+
+    <div class="col-12 col-md-8 px-0 d-none d-md-block">
+        <div class="float-right px-0">
+            <button mat-button class=" mx-1 px-0 px-md-2">
+                <mat-icon>help</mat-icon>
+                <span class="d-none d-md-inline-block">AYUDA</span>
+            </button>
+            <button mat-button class=" mx-1 px-0 px-md-2">
+                <mat-icon>account_circle</mat-icon>
+                <span class="d-none d-md-inline-block">SIG IN</span>
+            </button>
+            <mat-form-field class="select">
+                <mat-select [(ngModel)]="option">
+                    <mat-option *ngFor="let opt of options" [value]="opt.value">{{ opt.label }}</mat-option>
+                </mat-select>
+            </mat-form-field>
+        </div>
+    </div>
+
+</mat-toolbar>

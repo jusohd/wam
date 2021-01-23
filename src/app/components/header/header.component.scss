@@ -1,0 +1,24 @@
+.mat-toolbar{
+    background-color: #fff;
+}
+
+.logoWamFooter{
+    height: 32px;
+    width: auto;
+}
+
+::ng-deep.select .mat-form-field-infix {
+    min-width: 44px;
+    width: auto;
+}
+
+::ng-deep.select.mat-form-field-appearance-legacy .mat-form-field-underline {
+    height: 0px;
+}
+
+::ng-deep.select.mat-form-field .mat-select {
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+}
+

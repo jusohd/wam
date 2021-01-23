@@ -1,0 +1,27 @@
+<div class="col-12 col-md-6 offset-md-3 px-0 my-3">
+    <h1 class="text-center fw-bold">Mis Datos</h1>
+    <p class="text-center my-2 px-3">Revisa los datos y completa aquellos pendientes antes de continuar con el proceso
+    </p>
+
+    <form [formGroup]="userForm">
+        <ng-container *ngFor="let elm of inputs">
+            <div class="col-12 px-0">
+                <mat-form-field class="w-100" appearance="outline" *ngIf="form[elm].type === 'text'">
+                    <mat-label>{{form[elm].label}}</mat-label>
+                    <input matInput [type]="form[elm].type" [placeholder]="form[elm].label" [formControlName]="elm">
+                    <mat-error *ngIf="userForm.controls[elm].hasError('required')">
+                        Campo requerido
+                    </mat-error>
+                </mat-form-field>
+            </div>
+        </ng-container>
+    </form>
+
+    <div class="col-12 px-0 mt-3 d-flex">
+        <button mat-raised-button matStepperNext color="primary" id="btnNext" class="ml-auto btn-step blued-back-color "
+            [disabled]="userForm?.invalid" (click)="submitForm()">
+            <mat-icon>arrow_forward</mat-icon>
+            <span class="d-none d-md-inline-block">Continuar</span>
+        </button>
+    </div>
+</div>

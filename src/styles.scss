@@ -1,1 +1,35 @@
 /* You can add global styles to this file, and also import other style files */
+
+.container-fluid {
+    padding: 0;
+    height: 100%; 
+}
+
+html, body { 
+    height: 100%; 
+}
+
+body { 
+    margin: 0; 
+    padding-bottom: 70px;
+    background-color: lightgray;
+    font-family: Roboto, "Helvetica Neue", sans-serif; 
+}
+
+.ml-100{
+    margin-left: 100% !important;
+}
+
+.btn-step.mat-raised-button, .btn-step-right.mat-raised-button{
+    border-radius: 18px;
+}
+
+h1.fw-bold{
+    font-weight: bold;
+}
+
+.icon-pay{
+    font-size: 64px;
+    height: 64px;
+    width: 64px;
+}

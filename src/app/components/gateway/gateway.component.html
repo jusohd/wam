@@ -1,0 +1,37 @@
+<div class="col-12 col-md-8 offset-md-2 px-0 my-3">
+    <div class="my-3 px-0">
+        <h1 class="text-center fw-bold">Pago del producto</h1>
+        <p class="text-center my-2 px-3 ">Una vez realizado el pago del producto, recibirás un email con los detalles de
+            la compra
+        </p>
+    </div>
+
+    <div class="px-0 py-3 col-12 col-md-8 offset-md-2 text-center my-3 text-block">
+        <mat-icon class="icon-pay" color="warn">payments</mat-icon>
+        <h2>Tarjeta de crédito</h2>
+        <p class="text-center my-2 px-3">Se redirigirá a una plataforma de pago. Se trata de un procso seguro. Puede que
+            la validación del pago tarde 24 horas en completarse.
+        </p>
+
+        <div class="col-4 offset-4 px-0 my-3 text-center">
+            <img src="../../../assets/imgs/cards.png" alt="" class="cards-img">
+        </div>
+    </div>
+
+    <div class="col-12 px-0 col-md-8 offset-md-2 my-3 d-inline-block d-md-flex">
+        <div class="col-12 col-md-6 my-2 px-0 d-inline-flex">
+            <button mat-raised-button matStepperPrevious color="primary" class="btn-step">
+                <mat-icon>arrow_back</mat-icon>
+                <span class="d-md-inline-block">Anterior</span>
+            </button>
+        </div>
+        <div class="col-12 col-md-6 my-2 px-0 d-inline-flex">
+            <button mat-raised-button color="primary" id="btnPay" class="btn-step-right" (click)="pay()">
+                <span class="d-md-inline-block">Pagar</span>
+                <mat-icon>arrow_forward</mat-icon>
+            </button>
+        </div>
+    </div>
+
+
+</div>

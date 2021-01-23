@@ -1,0 +1,31 @@
+<div class="mt-3 col-12 col-md-10 offset-md-1">
+
+    <mat-horizontal-stepper #stepper id="stepper" labelPosition="bottom" class="steper" linear>
+        <mat-step #step1 [completed]="userForm.valid" state="user">
+            <ng-template matStepLabel>MIS DATOS</ng-template>
+            <mat-card class="mx-auto card">
+                <app-user #user [form]="inputs" [userForm]="userForm"></app-user>
+            </mat-card>
+        </mat-step>
+
+        <mat-step #step2 state="payment">
+            <ng-container *ngIf="!isPaid; else congrat">
+                <ng-template matStepLabel>PAGO DE PRODUCTO</ng-template>
+                <mat-card class="mx-auto card">
+                    <app-gateway (paid)="paid($event)"></app-gateway>
+                </mat-card>
+            </ng-container>
+
+            <ng-template #congrat>
+                <div class="px-0 py-3 col-12 col-md-8 offset-md-2 text-center my-3 text-block">
+                    <mat-card class="mx-auto card">
+                        <mat-icon class="icon-pay" color="warn">verified</mat-icon>
+                        <h2> {{payData.title}} </h2>
+                        <p class="text-center my-2 px-3"> {{payData.text}} </p>
+                    </mat-card>
+                </div>
+            </ng-template>
+        </mat-step>
+
+    </mat-horizontal-stepper>
+</div>

@@ -1,0 +1,27 @@
+.text-block{
+    border: 1px solid lightgray;
+    border-radius: 4px;
+}
+
+.cards-img{
+    height: 30px;
+    width: auto;
+}
+
+.btn-step.mat-raised-button, .btn-step-right.mat-raised-button{
+    margin: 0 auto;
+    min-width: 110px;
+}
+
+@media screen and (min-width: 768px){
+    .btn-step.mat-raised-button{
+        margin-left: 0px;
+        margin-right: auto;
+    }
+
+    .btn-step-right.mat-raised-button{
+        margin-left: auto;
+        margin-right: 0px;
+    }
+
+}

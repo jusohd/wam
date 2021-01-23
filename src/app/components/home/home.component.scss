@@ -1,0 +1,21 @@
+.steper.mat-stepper-horizontal{
+    background: transparent;
+}
+
+// ::ng-deep.steper.mat-stepper-horizontal.mat-stepper-label-position-bottom .mat-horizontal-stepper-header-container{
+//     width: 50%;
+//     margin: 0 auto;
+// }
+
+
+.card{
+    max-width: 940px;
+}
+
+@media screen and (min-width: 768px){
+    ::ng-deep.steper.mat-stepper-horizontal.mat-stepper-label-position-bottom .mat-horizontal-stepper-header-container{
+        width: 50%;
+        margin: 0 auto;
+    }
+
+}

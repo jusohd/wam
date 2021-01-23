@@ -1,0 +1,33 @@
+::ng-deep.sidenav .mat-drawer-inner-container{
+    background: #ffffff;
+    height: 100%;
+}
+
+::ng-deep.sidenav-container{
+    height: calc(100% - 64px);
+    background: transparent;
+}
+
+.panel.mat-expansion-panel{
+    box-shadow: none;
+}
+
+.panel.mat-expansion-panel .mat-expansion-panel-header{
+    padding: 0;
+}
+
+.panel.mat-expansion-panel .mat-expansion-panel-header.mat-expanded {
+    height: 48px;
+}
+
+.panel.mat-expansion-panel .mat-expansion-panel-header .mat-expansion-panel-header-title {
+    margin: 0 .25rem;
+}
+
+::ng-deep.panel.mat-expansion-panel .mat-expansion-panel-header span.mat-content {
+    flex: 0.88;
+}
+
+::ng-deep.panel.mat-expansion-panel .mat-expansion-panel-content .mat-expansion-panel-body{
+    padding: 0 0 16px;
+}
